@@ -7,6 +7,7 @@ namespace GenericNotification.API.Controllers
 {
     [Route("api/push-notification")]
     [ApiController]
+    [AllowAnonymous]
     public class PushNotificationController : ControllerBase
     {
         IPushNotificationService _pushNotificationService;
