@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GenericNotification.API.Controllers
 {
+    [AllowAnonymous]
     [Route("api/email")]
     [ApiController]
     public class EmailController : ControllerBase
