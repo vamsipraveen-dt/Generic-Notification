@@ -7,6 +7,7 @@ namespace GenericNotification.API.Controllers
 {
     [Route("api/sms")]
     [ApiController]
+    [AllowAnonymous]
     public class SmsController : ControllerBase
     {
         private readonly ISmsService _smsService;
